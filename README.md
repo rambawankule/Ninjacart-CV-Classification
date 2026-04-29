@@ -1,4 +1,4 @@
-<![CDATA[<div align="center">
+<div align="center">
 
 # 🥦 Ninjacart Vegetable Image Classifier
 
@@ -42,9 +42,9 @@ Ninjacart-CV-Classification/
 │
 ├── 🤖 models/
 │   ├── CNN_Scratch_best.keras               ← Saved CNN baseline
-│   └── MobileNetV2_FT_best.keras           ← Saved MobileNetV2 fine-tuned
-│   # VGG16_FT_best.keras                   ← Not committed (117MB > GitHub limit)
-│   #                                           See "Downloading Models" section below
+│   ├── MobileNetV2_FT_best.keras           ← Saved MobileNetV2 fine-tuned
+│   └── VGG16_FT_best.keras                 ← NOT committed (117MB > GitHub limit)
+│                                              See "Downloading Models" section below
 │
 ├── 📊 reports/
 │   ├── Ninjacart_CV_Classification.pdf      ← Exported notebook report
@@ -146,6 +146,7 @@ jupyter notebook notebooks/Ninjacart_CV_Classification.ipynb
 ```bash
 tensorboard --logdir logs/
 ```
+
 Then open `http://localhost:6006` in your browser.
 
 ---
@@ -158,7 +159,7 @@ The `VGG16_FT_best.keras` model (117 MB) exceeds GitHub's file size limit and is
 |---|---|---|
 | `CNN_Scratch_best.keras` | 5.6 MB | ✅ Yes |
 | `MobileNetV2_FT_best.keras` | 23 MB | ✅ Yes |
-| `VGG16_FT_best.keras` | 117 MB | ❌ No (too large) |
+| `VGG16_FT_best.keras` | 117 MB | ❌ No (exceeds GitHub limit) |
 
 To regenerate `VGG16_FT_best.keras`, run the full notebook — it will retrain and save the model automatically.
 
@@ -205,4 +206,3 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 <div align="center">
   <sub>Built with ❤️ for Ninjacart's supply chain automation</sub>
 </div>
-]]>
